@@ -9,3 +9,37 @@ $('.hero-slider').owlCarousel({
     autoplayHoverPause: true,
 
 });
+
+// Wait until the DOM is fully loaded
+document.addEventListener("DOMContentLoaded", function() {
+
+    // Get the menu toggle button and the menu itself
+    const menuToggle = document.getElementById("menu-toggle");
+    const menu = document.getElementById("menu");
+
+    // Get the services dropdown button and its corresponding dropdown menu
+    const servicesButton = document.getElementById("services-button");
+    const servicesDropdown = document.getElementById("services-dropdown");
+
+    // Mobile menu toggle (open/close)
+    menuToggle.addEventListener("click", function() {
+        // Toggle the 'hidden' class on the menu to show or hide it
+        menu.classList.toggle("hidden");
+    });
+
+    // Services dropdown toggle for mobile view
+    servicesButton.addEventListener("click", function(event) {
+        // Prevent the default action of the link (i.e., page jump)
+        event.preventDefault();
+
+        // Toggle the visibility of the dropdown menu on click
+        servicesDropdown.classList.toggle("hidden");
+    });
+
+    // Close the services dropdown if the user clicks anywhere outside the dropdown
+    document.addEventListener("click", function(event) {
+        if (!servicesButton.contains(event.target) && !servicesDropdown.contains(event.target)) {
+            servicesDropdown.classList.add("hidden");
+        }
+    });
+});

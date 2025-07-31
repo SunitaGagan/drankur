@@ -36,10 +36,7 @@ ul.hover-text > li > a:hover {
 .btn-blue:hover {
   background-color: #57a0d3;
 }
-.logo > img {
-  width: auto;
-  height: 60px;
-}
+
 .navbar ul > li > a {
   transition: all ease-in 0.2s;
   font-size: 1rem;
@@ -298,6 +295,13 @@ margin: 5px auto;
 .header-top .bg-transparent .blue-logo {
   display: none;
 }
+.header-top .bg-transparent #menu-toggle {
+  color: #fff;
+}
+.header-top .bg-white #menu-toggle {
+  color: #00007A;
+}
+
 .header-top nav.bg-white .blue-logo {
   display: block;
 }
@@ -310,7 +314,7 @@ nav.bg-white ul>li>a{
 nav.bg-white ul>li > a.btn-blue{
   color: #fff;
 }
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1280px) {
   .services-section.bg-triangle::before{
     background-image: url("../images/left_triangle_blue.svg");
     width: 223px;
@@ -353,5 +357,66 @@ nav.bg-white ul>li > a.btn-blue{
     background-position: top;
     z-index: 1;
   }
+  .logo > img {
+    width: auto;
+    height: 60px;
+  }
+  .banner-text > h1 {
+    font-size: 4rem;
+    font-weight: 800;
+    line-height: 5.5rem;
+  }
+  .banner-text > h3 {
+    font-size: 2.5rem;
+    line-height: 4rem;
+   
+    font-weight: 500;
+  }
+}
+@media screen and (min-width: 768px) {
+  .banner-text > h1 {
+    font-size: 3rem;
+    font-weight: 800;
+    line-height: 4.5rem;
+  }
+  .banner-text > h3 {
+    font-size: 2rem;
+    line-height: 4rem;   
+    font-weight: 500;
+  }
+}
+@media screen and (max-width: 767px) {
+  .banner-text > h1 {
+    font-size: 2rem;
+    font-weight: 800;
+    line-height: 2.5rem;
+  }
+  .banner-text > h3 {
+    font-size: 1rem;
+    line-height: 4rem;   
+    font-weight: 500;
+  }
+}
+@media (min-width: 1024px){
+  .hero-slider .owl-carousel .owl-item img{
+    height: 100vh;
+  }
+}
+.hero-slider .item img{
+  object-fit: cover;
+  height: 100vh;
+
+}
+.banner-text > h1 { 
+  font-weight: 800; 
+  margin-bottom: 10px;
+}
+.banner-text > h3 {  
+  margin-top: 0px;
+  font-weight: 500;
+}
+.logo > img {
+  width: auto;
+  height: 45px;
 }
 
