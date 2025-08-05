@@ -80,16 +80,16 @@
                     <ul id="menu" class="hidden lg:flex flex-col lg:flex-row lg:items-center lg:space-x-6 w-full lg:w-auto mt-4 lg:mt-0">
 
                         <li>
-                            <a href="#home" class="block px-3 py-2 text-gray-700 hover:text-blue-600">Home</a>
+                            <a href="index.html" class="block px-3 py-2 text-gray-700 hover:text-blue-600">Home</a>
                         </li>
 
                         <li>
-                            <a href="#physicians" class="block px-3 py-2 text-gray-700 hover:text-blue-600">Physicians</a>
+                            <a href="physicians.html" class="block px-3 py-2 text-gray-700 hover:text-blue-600">Physicians</a>
                         </li>
 
                         <!-- 🔽 Services Dropdown -->
                         <li class="relative group">
-                            <a href="#" class="flex items-center px-3 py-2 text-gray-700 hover:text-blue-600 focus:outline-none" aria-haspopup="true" aria-expanded="false" id="services-button">
+                            <a href="services.html" class="flex items-center px-3 py-2 text-gray-700 hover:text-blue-600 focus:outline-none" aria-haspopup="true" aria-expanded="false" id="services-button">
                             Services
                             <svg class="ml-1 w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"
                                 xmlns="http://www.w3.org/2000/svg">
@@ -100,9 +100,9 @@
 
                             <!-- Dropdown Menu -->
                             <ul id="services-dropdown" class="hidden group-hover:block md:absolute bg-white shadow-md pt-2 md:min-w-[175px] rounded-md md:z-50" aria-label="Submenu">
-                                <li><a href="#conditions_treated" class="block px-4 py-2 text-gray-700">Conditions Treated</a>
+                                <li><a href="conditions_treated.html" class="block px-4 py-2 text-gray-700">Conditions Treated</a>
                                 </li>
-                                <li><a href="#treatment_Offer" class="block px-4 py-2 text-gray-700">Treatment Offer</a></li>
+                                <li><a href="treatment_Offer.html" class="block px-4 py-2 text-gray-700">Treatment Offer</a></li>
 
                             </ul>
                         </li>
@@ -110,7 +110,7 @@
                             <a href="blog.html" class="block px-3 py-2 text-gray-700">Blog</a>
                         </li>
                         <li>
-                            <a href="contact.html" class="block px-3 py-2 text-gray-700 ">Locations</a>
+                            <a href="locations.html" class="block px-3 py-2 text-gray-700 ">Locations</a>
                         </li>
                         <li>
                             <a href="appointment_now.html" class="block px-3 py-2 text-gray-700 btn-blue">Schedule
@@ -332,8 +332,6 @@
                         </div>
 
                     </div>
-
-
                     <!-- Testimonial 2 -->
                     <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-2 gap-4 text-white">
                         <div class=" p-4">
@@ -415,39 +413,14 @@
                 }
             });
 
-            const navbar = document.getElementById('navbar');
 
-            window.addEventListener('scroll', () => {
-                if (window.scrollY > 50) {
-                    navbar.classList.add('bg-white', 'shadow-md', 'navbar');
-                    navbar.classList.remove('bg-transparent');
-                } else {
-                    navbar.classList.remove('bg-white', 'shadow-md');
-                    navbar.classList.add('bg-transparent');
-                }
-            });
         });
     </script>
-    <style>
-        .owl-nav button.owl-prev,
-        .owl-nav button.owl-next {
-            position: absolute;
-            top: 50%;
-            transform: translateY(-50%);
-            background: transparent;
-            border: none;
-            font-size: 2rem;
-            color: #333;
-        }
-        
-        .owl-nav button.owl-prev {
-            left: -30px;
-        }
-        
-        .owl-nav button.owl-next {
-            right: -30px;
-        }
-    </style>
+    <section class="map-block">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3023.173081360237!2d-73.99918282397313!3d40.73621687139001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25997c6d24255%3A0x3fd7dcd0a500011e!2s47%20W%2013th%20St%2C%20New%20York%2C%20NY%2010011%2C%20USA!5e0!3m2!1sen!2sin!4v1753968182583!5m2!1sen!2sin"
+            style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </section>
+
     <footer>
         <div class="text-center pt-20  bg-[#001928]">
             <div class="container px-4 mx-auto">
@@ -508,11 +481,11 @@
                 <!-- Navigation links -->
                 <div class="flex flex-wrap justify-center gap-6 text-sm sm:text-bas text-gray-300 pb-16 pt-4">
                     <ul class="flex justify-center font-normal footer-nav flex-wrap">
-                        <li> <a href="#"> HOME</a></li>
-                        <li> <a href="#"> PHYSICIANS</a></li>
-                        <li> <a href="#"> SERVICES</a></li>
-                        <li> <a href="#"> BLOG</a></li>
-                        <li> <a href="#"> LOCATIONS</a></li>
+                        <li> <a href="index.html"> HOME</a></li>
+                        <li> <a href="physicians.html"> PHYSICIANS</a></li>
+                        <li> <a href="services.html"> SERVICES</a></li>
+                        <li> <a href="blog.html"> BLOG</a></li>
+                        <li> <a href="location.html"> LOCATIONS</a></li>
                     </ul>
                 </div>
             </div>
@@ -528,7 +501,5 @@
         </div>
     </footer>
 </body>
-
-</html>
 
 </html>
