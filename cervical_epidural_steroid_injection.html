@@ -1,0 +1,450 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="src/output.css" rel="stylesheet">
+    <link href="./src/custom.css" rel="stylesheet">
+    <script src="./src/script.js"></script>
+    <link href="./src/owl.carousel.min.css" rel="stylesheet">
+    <script src="./src/jquery.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="./src/owl.carousel.min.js"></script>
+    <link href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" rel="stylesheet">
+
+</head>
+
+<body>
+    <header class="header-top">
+        <div class="bg-black text-white p-4 ">
+            <div class="container mx-auto px-4">
+                <div class="flex gap-4">
+                    <div class="w-1/2">
+                        <ul class="flex  items-center hover-text">
+                            <li class="pr-4">
+                                <a href="#">
+                                    <img src="images/linkedin-outline.svg" alt="linkedin" />
+                                </a>
+                            </li>
+                            <li class="pr-4">
+                                <a href="#">
+                                    <img src="images/instagram-line.svg" alt="instagram" />
+                                </a>
+                            </li>
+                            <li class="pr-4">
+                                <a href="#">
+                                    <img src="images/facebook.svg" alt="facebook" />
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <img src="images/youtube-line.svg" alt="youtube" />
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="w-1/2">
+                        <ul class="flex justify-end hover-text">
+                            <li>
+                                <a href="tel:8005550199" class="flex items-center">
+                                    <img src="images/call.svg" alt="call" />
+                                    <span class="pl-3"> 800‑555‑0199</span></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <nav class="bg-transparent  z-50 navbar" role="navigation" aria-label="Main navigation" id="navbar">
+            <div class="container mx-auto px-4">
+
+                <div class=" py-3 flex justify-between items-center flex-wrap">
+
+                    <!-- 🔹 Site Logo -->
+                    <a href="/" class="logo" aria-label="Homepage">
+                        <img src="images/white_logo.png" alt="logo" class="white-logo" />
+                        <img src="images/blue_logo.png" alt="logo" class="blue-logo" />
+                    </a>
+
+                    <!-- 🔹 Mobile Menu Toggle -->
+                    <button id="menu-toggle" class="lg:hidden  focus:outline-none" aria-label="Toggle Menu">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M4 6h16M4 12h16M4 18h16" />
+                        </svg>
+                    </button>
+
+                    <!-- 🔹 Navigation Links -->
+                    <ul id="menu" class="hidden lg:flex flex-col lg:flex-row lg:items-center lg:space-x-6 w-full lg:w-auto mt-4 lg:mt-0">
+
+                        <li>
+                            <a href="index.html" class="block px-3 py-2 text-gray-700 hover:text-blue-600">Home</a>
+                        </li>
+
+                        <li>
+                            <a href="physicians.html" class="block px-3 py-2 text-gray-700 hover:text-blue-600">Physicians</a>
+                        </li>
+
+                        <!-- 🔽 Services Dropdown -->
+                        <li class="relative group">
+                            <a href="services.html" class="flex items-center px-3 py-2 text-gray-700 hover:text-blue-600 focus:outline-none" aria-haspopup="true" aria-expanded="false" id="services-button">
+                                Services
+                                <svg class="ml-1 w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M19 9l-7 7-7-7"></path>
+                                </svg>
+                            </a>
+
+                            <!-- Dropdown Menu -->
+                            <ul id="services-dropdown" class="hidden group-hover:block md:absolute bg-white shadow-md pt-2 md:min-w-[175px] rounded-md md:z-50" aria-label="Submenu">
+                                <li><a href="conditions_treated.html" class="block px-4 py-2 text-gray-700">Conditions
+                                        Treated</a>
+                                </li>
+                                <li><a href="treatment_Offer.html" class="block px-4 py-2 text-gray-700">Treatment
+                                        Offer</a></li>
+
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="blog.html" class="block px-3 py-2 text-gray-700">Blog</a>
+                        </li>
+                        <li>
+                            <a href="locations.html" class="block px-3 py-2 text-gray-700 ">Locations</a>
+                        </li>
+                        <li>
+                            <a href="appointment_now.html" class="block px-3 py-2 text-gray-700 btn-blue">Schedule
+                                Appointment Now</a>
+                        </li>
+
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!-- banner -->
+    <div class="bg-[#4A4A4A] text-white  flex flex-col justify-between pt-36 sub-header" style="background-image: url(images/sub_header.jpg);">
+        <div class="container mx-auto px-4 relative z-10">
+            <!-- Centered Title -->
+            <div class="flex-grow flex items-center justify-center pt-16 pb-16">
+                <h1 class="font-bold uppercase">Cervical Epidural Steroid Injection</h1>
+            </div>
+            <!-- Breadcrumb Navigation -->
+            <div class="p-4 text-sm">
+                <nav class="text-white">
+                    <a href="index.html" class="hover:underline">Home</a>
+                    <span class="mx-1">/</span>
+                    <a href="services.html" class="hover:underline">Services</a>
+                    <span class="mx-1">/</span>
+                    <a href="treatment_offer.html" class="hover:underline">Treatment
+                        Offer</a>
+                    <span class="mx-1">/</span>
+                    <span class="font-bold">Cervical Epidural Steroid Injection</span>
+                </nav>
+            </div>
+        </div>
+    </div>
+    <main>
+        <section class="sub_service_section bg-triangle">
+            <div class="container mx-auto px-4 relative z-10">
+                <div class="grid grid-cols-1 md:grid-cols-4">
+                    <!-- Sidebar -->
+                    <aside class="pt-120 text-black md:col-span-1 left-side sticky top-0 h-screen">
+                        <h2 class="font-semibold text-blue-700 flex items-center justify-between">
+                            Conditions We Treat
+                            <span class="text-xl"><i class="fas fa-angle-down"></i></span>
+                        </h2>
+                        <ul class="list_sub_services">
+                            <li><a href="#overview">Overview </a></li>
+                            <li><a href="#pre_procedural_details">Pre-procedural Details</a></li>
+                            <li><a href="#procedure_details">Procedure Details</a></li>
+                            <li><a href="#post_procedural_details">Post-procedural Details</a></li>
+
+                        </ul>
+                    </aside>
+
+                    <!-- Main Content -->
+                    <main class="p-8 space-y-8 md:col-span-3 pt-120 lg:pl-16 pb-26">
+                        <div class="services_over">
+                            <h1> Cervical Epidural Steroid Injection
+                            </h1>
+                            <h2> (Fluoroscopic-Guided Injection to Reduce Neck and Arm Pain)</h2>
+
+
+                        </div>
+                        <section class="sub_section">
+                            <h3 class="text-xl font-semibold mb-3">Overview</h3>
+                            <p>A cervical epidural steroid injection (CESI) is a common, minimally invasive procedure used to treat pain that originates from inflammation or compression of spinal nerves in the neck. This type of pain often radiates from
+                                the neck into the shoulder, arm, or hand and may be caused by disc herniation, spinal stenosis, or degenerative changes in the spine.
+                            </p>
+                            <p>The injection delivers corticosteroid medication directly into the epidural space—the area surrounding the spinal cord and nerve roots—to reduce inflammation and nerve irritation. </p>
+                            <p> This treatment is typically recommended when symptoms do not improve with conservative care such as physical therapy, medications, or activity modification.</p>
+                            <h3 class="text-xl font-semibold mb-3 pt-3">Pre-Procedural Instructions
+                            </h3>
+                            <h4 class="text-lg font-semibold mb-3"> Conditions treated with CESI include:
+
+                            </h4>
+                            <ul class="list-disc list-inside  space-y-2">
+                                <li>Cervical radiculopathy (pinched nerve in the neck)</li>
+                                <li>Cervical disc herniation or bulge</li>
+                                <li>Cervical spinal stenosis</li>
+                                <li>Degenerative disc disease</li>
+                                <li>Nerve inflammation from auto accidents or workplace injuries</li>
+                                <li>Whiplash-related disorders with nerve involvement</li>
+                            </ul>
+
+                        </section>
+
+
+
+                        <section class="sub_section">
+                            <h3 class="text-xl font-semibold mb-3"> Pre-Procedural Instructions
+                            </h3>
+                            <h4 class="text-lg font-semibold mb-3"> How Should I Prepare?</h4>
+                            <ul class="list-disc list-inside  space-y-2">
+                                <li> <b> Driver Required: </b> We ask that you arrange for a driver to take you home after the procedure.</li>
+                                <li><b> Food: </b> You may eat a light meal 1–2 hours prior to the procedure. If sedation is planned, please follow the specific sedation protocol provided by our team.</li>
+                            </ul>
+                            <ul class="list-disc list-inside  space-y-2">
+                                <li>Continue routine medications unless directed otherwise.</li>
+                                <li>
+                                    Blood thinners, Aspirin, NSAIDs, and supplements:
+                                    <ul class="list-disc ml-6">
+                                        <li>Inform us in advance if you take blood thinners (e.g., Plavix, Eliquis, Xarelto, Coumadin), NSAIDs (e.g., ibuprofen, naproxen), Aspirin, or supplements that increase bleeding risk.</li>
+                                        <li>Certain medications may need to be stopped for a short period of time before the injection.</li>
+                                        <li>Speak with your prescribing provider to ensure it’s safe to temporarily stop these medications.</li>
+                                        <li>Our team will review your medication list and coordinate with your other providers if needed.</li>
+                                    </ul>
+
+                                    <h4 class="text-lg font-semibold mb-3"> Notify us if: </h4>
+                                    <ul class="list-disc ml-6">
+                                        <li>You have a fever, infection, or recent illness.</li>
+                                        <li>You have started antibiotics or had changes to your medications.</li>
+                                    </ul>
+                                </li>
+                            </ul>
+
+                            <h4 class="text-lg font-semibold mb-3"> Sedation </h4>
+                            <p> Most cervical epidural steroid injections can be performed comfortably without sedation. However, if you have anxiety or difficulty lying flat, mild sedation may be offered at the discretion of the physician. Please discuss
+                                this with your provider in advance.
+                            </p>
+                            <h2 class="text-lg font-bold text-yellow-700 mb-3">Special Instructions for Diabetic Patients</h2>
+                            <ul class="list-disc list-inside space-y-2 text-gray-700">
+                                <li>Steroid injections may raise blood sugar levels for several days.</li>
+                                <li>Please contact your primary care physician or endocrinologist prior to the procedure for management recommendations.</li>
+                                <li>Monitor your glucose closely after the injection.</li>
+                                <li>Report sustained elevations to your managing provider.</li>
+                            </ul>
+                        </section>
+
+                        <section class="sub_section">
+                            <h2 class="text-xl font-bold text-gray-800 mb-4">Procedure Details</h2>
+
+                            <p class="text-gray-700 mb-4">
+                                The procedure is performed in a sterile outpatient setting under real-time X-ray (fluoroscopic) guidance.
+                            </p>
+
+                            <!-- What to Expect -->
+                            <h3 class="text-lg font-semibold text-blue-600 mb-2">What to Expect:</h3>
+
+                            <!-- Preparation -->
+                            <h4 class="text-md font-semibold text-gray-800 mt-4 mb-1">Preparation:</h4>
+                            <ul class="list-disc list-inside text-gray-700 space-y-1">
+                                <li>You will lie face down on a procedure table.</li>
+                                <li>The skin will be cleaned and numbed with a local anesthetic.</li>
+                            </ul>
+
+                            <!-- Injection Process -->
+                            <h4 class="text-md font-semibold text-gray-800 mt-4 mb-1">Injection Process:</h4>
+                            <ul class="list-disc list-inside text-gray-700 space-y-1">
+                                <li>A needle is guided into the epidural space using fluoroscopy.</li>
+                                <li>Contrast dye may be used to confirm positioning.</li>
+                                <li>A corticosteroid is injected to reduce nerve inflammation.</li>
+                            </ul>
+
+                            <!-- Monitoring -->
+                            <h4 class="text-md font-semibold text-gray-800 mt-4 mb-1">Monitoring:</h4>
+                            <ul class="list-disc list-inside text-gray-700 space-y-1">
+                                <li>You will be monitored during the procedure to ensure comfort and safety.</li>
+                                <li>Most procedures last 15–30 minutes, followed by a brief recovery period on-site.</li>
+                            </ul>
+                        </section>
+
+                        <section class="sub_section">
+                            <div class="space-y-8">
+
+                                <!-- Post-Procedural Instructions -->
+                                <div class="bg-white border border-gray-200 rounded-lg shadow-md p-6">
+                                    <h2 class="text-2xl font-bold text-gray-800 mb-4">Post-Procedural Instructions</h2>
+
+                                    <!-- What to Expect After the Procedure -->
+                                    <h3 class="text-lg font-semibold text-blue-600 mb-2">What to Expect After the Procedure</h3>
+                                    <ul class="list-disc list-inside text-gray-700 space-y-1">
+                                        <li><strong>Relief timeline:</strong> Steroids typically begin to work within 2 to 5 days, but in some cases may take up to 2 weeks.</li>
+                                        <li><strong>Activity:</strong> Resume light activities the next day; avoid strenuous activity for 24 hours.</li>
+                                        <li><strong>Soreness:</strong> Temporary soreness at the injection site is common.</li>
+                                        <li><strong>Pain tracking:</strong> Keep a log of symptoms over the next 1–2 weeks.</li>
+                                        <li>If successful, additional injections may be spaced out over time—typically no more than 3–4 per year in the same region.</li>
+                                    </ul>
+
+                                    <!-- Additional Instructions -->
+                                    <h3 class="text-lg font-semibold text-blue-600 mt-6 mb-2">Additional Instructions:</h3>
+                                    <ul class="list-disc list-inside text-gray-700 space-y-1">
+                                        <li>Contact the office for any signs of infection, fever, or worsening pain.</li>
+                                        <li>Attend follow-up as scheduled.</li>
+                                    </ul>
+                                </div>
+
+                                <!-- Risks & Side Effects -->
+                                <div class="bg-red-50 border-l-4 border-red-400 rounded-lg p-6">
+                                    <h3 class="text-lg font-bold text-red-700 mb-2">What are the risks and side effects?</h3>
+                                    <p class="text-gray-700 mb-3">
+                                        Risks and side effects are minimal, and serious complications are rare. We take every precaution to ensure your safety. Potential risks may include but are not limited to:
+                                    </p>
+                                    <ul class="list-disc list-inside text-gray-700 space-y-1">
+                                        <li>Vasovagal response (fainting or dizziness)</li>
+                                        <li>New or increased pain</li>
+                                        <li>Infection</li>
+                                        <li>Bleeding</li>
+                                        <li>Permanent skin changes</li>
+                                        <li>Allergic or unexpected drug reaction with minor or major consequences</li>
+                                        <li>Unintended spinal or nerve injury</li>
+                                    </ul>
+                                </div>
+
+                                <!-- Pregnancy Warning -->
+                                <div class="bg-yellow-50 border-l-4 border-yellow-400 rounded-lg p-6">
+                                    <h3 class="text-lg font-bold text-yellow-700 mb-2">What if I am pregnant?</h3>
+                                    <p class="text-gray-700 mb-3">
+                                        There are serious potential risks to an unborn fetus from imaging used during this procedure (e.g., X-ray/fluoroscopy). If there is any chance you may be pregnant, please notify our team immediately and postpone the injection until pregnancy is ruled
+                                        out. This procedure is not considered safe during pregnancy.
+                                    </p>
+                                    <p class="text-gray-700">Ask your provider if you have any concerns. Your physician will review the risks in detail before the procedure to ensure you are fully informed.</p>
+                                </div>
+
+                                <!-- Schedule a Consultation -->
+                                <div class="bg-blue-50 border border-blue-200 rounded-lg shadow-sm p-6 text-center">
+                                    <h3 class="text-xl font-bold text-blue-700 mb-3">Schedule a Consultation</h3>
+                                    <p class="text-gray-700 mb-4">
+                                        If you're experiencing neck or arm pain due to a pinched nerve, disc issue, or spinal inflammation, a cervical epidural steroid injection may provide lasting relief.
+                                    </p>
+                                    <a href="contact.html" class="inline-block bg-blue-600 text-white px-5 py-2 rounded-lg hover:bg-blue-700 transition">
+                                    Contact Restore Spine and Pain
+                                  </a>
+                                </div>
+
+                            </div>
+
+                        </section>
+
+
+
+                    </main>
+                </div>
+            </div>
+        </section>
+        <section class="bg-cover bg-center" style="background-image: url('images/appointment_bg.jpg');">
+            <div class="bg-black/40">
+                <div class="max-w-6xl mx-auto flex items-center justify-between py-20 px-6">
+
+                    <!-- Left Text -->
+                    <h2 class="text-white text-2xl font-bold">
+                        Schedule an Appointment Now
+                    </h2>
+
+                    <!-- Right Button -->
+                    <a href="#" class="bg-white text-black px-8 py-3 rounded-full font-medium border border-blue-900 hover:bg-gray-100 transition">
+          Schedule Appointment Now
+        </a>
+
+                </div>
+            </div>
+        </section>
+    </main>
+
+
+    <footer>
+        <div class="text-center pt-20  bg-[#001928]">
+            <div class="container px-4 mx-auto">
+                <!-- Paragraph -->
+                <p class=" text-gray-300 leading-relaxed text-sm sm:text-base mb-10">
+                    Lorem ipsum dolor sit amet consectetur. Nisl faucibus in integer malesuada sollicitudin magnis sodales. Tincidunt tellus a in imperdiet tincidunt. Turpis adipiscing sagittis at orci. Quisque velit vulputate et fusce ac et. Faucibus ultrices gravida tortor
+                    tristique ipsum. Feugiat feugiat leo suspendisse lectus pharetra felis cursus. Facilisi ridiculus laoreet et sit ipsum. Sit vulputate habitasse lorem tempor vulputate.
+                </p>
+
+                <!-- Social + Logo + Phone -->
+
+                <!-- Social icons -->
+                <div class="flex gap-4 items-center justify-center flex-col md:flex-row pb-10 pt-8">
+                    <div class="md:w-1/3">
+                        <ul class="flex  items-center hover-text social-icon">
+                            <li class="pr-9">
+                                <a href="#">
+                                    <img src="images/linkedin-outline.svg" alt="twitter" />
+                                </a>
+                            </li>
+                            <li class="pr-9">
+                                <a href="#">
+                                    <img src="images/instagram-line.svg" alt="instagram" />
+                                </a>
+                            </li>
+                            <li class="pr-9">
+                                <a href="#">
+                                    <img src="images/facebook.svg" alt="facebook" />
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <img src="images/youtube-line.svg" alt="youtube" />
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="md:w-1/3">
+                        <!-- Logo + Text -->
+                        <div class="flex flex-col items-center">
+                            <img src="images/white-logo.svg" alt="Logo" class="h-16 mb-1">
+
+                        </div>
+                    </div>
+                    <div class="md:w-1/3">
+                        <!-- Phone -->
+                        <ul class="flex justify-end contact">
+                            <li>
+                                <a href="tel:8005550199" class="flex items-center">
+                                    <img src="images/call.svg" alt="call" />
+                                    <span class="pl-6"> 800‑555‑0199</span></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+
+                <!-- Navigation links -->
+                <div class="flex flex-wrap justify-center gap-6 text-sm sm:text-bas text-gray-300 pb-16 pt-4">
+                    <ul class="flex justify-center font-normal footer-nav flex-wrap">
+                        <li> <a href="index.html"> HOME</a></li>
+                        <li> <a href="physicians.html"> PHYSICIANS</a></li>
+                        <li> <a href="services.html"> SERVICES</a></li>
+                        <li> <a href="blog.html"> BLOG</a></li>
+                        <li> <a href="location.html"> LOCATIONS</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!-- Copyright -->
+        <div class="border-t border-gray-700 pt-8 pb-8 bg-[#00111B]">
+            <div class="container px-4 mx-auto">
+                <div class="text-sm text-white flex justify-between mx-auto">
+                    <p>© Copyright 2025</p>
+                    <p>All rights reserved.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="src/script.js"></script>
+</body>
+
+</html>

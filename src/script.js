@@ -57,3 +57,17 @@ document.addEventListener("DOMContentLoaded", () => {
         }
     });
 });
+document.addEventListener("DOMContentLoaded", () => {
+    // Get current page filename
+    const currentPage = window.location.pathname.split("/").pop();
+
+    // Select all sidebar links
+    const links = document.querySelectorAll(".list_sub_services a");
+
+    // Loop and match current page
+    links.forEach(link => {
+        if (link.getAttribute("href") === currentPage) {
+            link.classList.add("active"); // Active style
+        }
+    });
+});

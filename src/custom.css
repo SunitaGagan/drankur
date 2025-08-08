@@ -53,23 +53,23 @@ ul#services-dropdown li > a:hover {
   border-radius: 4px;
 }
 .section {
-  padding: 120px 0;
+  padding: 80px 0;
 }
 ul.social-icon > li > a > img {
-  width: 45px;
-  height: 45px;
+  width: 30px;
+  height: 30px;
 }
 ul.contact > li > a > img {
-  width: 42px;
-  height: 42px;
+  width: 30px;
+  height: 30px;
 }
 ul.contact > li > a {
-  font-size: 32px;
+  font-size: 28px;
   font-weight: 600;
   color: #fff;
 }
 .footer-nav > li > a {
-  font-size: 18px;
+  font-size: 16px;
   color: #fff;
   padding-right: 20px;
   padding-left: 20px;
@@ -382,7 +382,6 @@ nav.bg-white ul > li > a.btn-blue {
   .banner-text > h3 {
     font-size: 2.5rem;
     line-height: 4rem;
-
     font-weight: 500;
   }
 }
@@ -462,10 +461,10 @@ nav.bg-white ul > li > a.btn-blue {
   background-color: #DBECFE;
 }
 .pt-120{
-  padding-top: 120px;
+  padding-top: 90px;
 }
 .pb-120{
-  padding-bottom: 120px;
+  padding-bottom: 90px;
 }
 .physicians-section p{line-height: 1.7rem;}
 .bg-blue-ligt > img{
@@ -507,7 +506,7 @@ nav.bg-white ul > li > a.btn-blue {
   background-color: rgba(0, 0, 0, 0.6);
   content: "";
 }
-.brand-section{
+.brand-section {
   background-color: #dcdcdc;
   padding: 40px 0;
 }
@@ -545,7 +544,85 @@ transition: all ease-in 0.2s;
 .location-block h2{
   margin-bottom: 15px;
 }
-
 .location-block:hover::before{
   background-color: rgba(22, 2, 95, 1);
 }
+
+.services_list > li > a{
+  font-size: 1rem;
+  color: #333;
+  display: block;  
+  padding-bottom: 10px;
+  border-bottom: 1px dotted #bbbbbb;
+  padding-top: 10px;
+  transition: all ease-in 0.2s;
+}
+.services_list > li > a:hover{
+  border-bottom: 1px dotted #fff;
+  color: #00007a;
+}
+.services_card h3{
+  
+}
+.services_card h3:hover{
+  color: #00007a;
+}
+.services_list > li > a{
+  position: relative;
+  font-weight: 500;  
+}
+
+.services_list > li > a::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 1px;
+  width: 0%;
+  background-color: #00007a; /* Line color */
+  transition: width 0.3s ease;
+}
+
+.services_list > li > a:hover::after {
+  width: 100%;
+}
+
+.service_img > img{height: 100%;transition: transform 0.4s ease-in-out;}
+.service_img{ overflow: hidden;}
+.service_img:hover img {
+ transform: scale(1.2);
+}
+ul.list_sub_services{
+  padding-top: 12px;
+
+}
+.list_sub_services > li > a{
+  display: block;
+  padding: 20px 25px;
+  border-bottom: 1px solid #bbbbbb;
+  transition: all ease-in-out 0.3s;
+  font-weight: 500;
+}
+.list_sub_services > li > a:hover,.list_sub_services > li > a.active{
+  background-color: #fff;
+  border-bottom: 1px solid #00007a;
+  color: #00007a;
+  box-shadow: 0  2px 0px rgba(0, 0, 0, 0.1);
+}
+.left-side{  background-color: #eee;}
+.left-side >h2{padding: 15px 25px;}
+.services_over {
+  position: relative;
+}
+.services_over h1{
+  font-size: 28px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+.services_over h2{font-size: 18px;
+  font-weight: 500;
+  margin-bottom: 30px;}
+  .sub_section{
+    position: relative;
+    padding: 10px 0;
+  }
