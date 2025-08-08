@@ -1137,6 +1137,10 @@ video {
   padding-top: 5rem;
 }
 
+.pt-3 {
+  padding-top: 0.75rem;
+}
+
 .pt-36 {
   padding-top: 9rem;
 }
@@ -1147,10 +1151,6 @@ video {
 
 .pt-8 {
   padding-top: 2rem;
-}
-
-.pt-3 {
-  padding-top: 0.75rem;
 }
 
 .text-left {
