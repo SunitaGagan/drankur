@@ -45,15 +45,17 @@ document.addEventListener("DOMContentLoaded", function() {
 });
 
 document.addEventListener("DOMContentLoaded", () => {
+    const headerTop = document.querySelector('.contact_header');
     const navbar = document.getElementById('navbar');
-
     window.addEventListener('scroll', () => {
         if (window.scrollY > 50) {
             navbar.classList.add('bg-white', 'shadow-md', 'navbar');
             navbar.classList.remove('bg-transparent');
+            headerTop.classList.add('bg-black');
         } else {
             navbar.classList.remove('bg-white', 'shadow-md');
             navbar.classList.add('bg-transparent');
+            headerTop.classList.remove('bg-black');
         }
     });
 });
@@ -70,4 +72,24 @@ document.addEventListener("DOMContentLoaded", () => {
             link.classList.add("active"); // Active style
         }
     });
+
+    const navbarHeight = document.querySelector('nav').offsetHeight;
+
+    document.querySelectorAll('nav a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function(e) {
+            e.preventDefault();
+            const targetID = this.getAttribute('href');
+            const target = document.querySelector(targetID);
+            if (target) {
+                const elementPosition = target.getBoundingClientRect().top;
+                const offsetPosition = elementPosition + window.pageYOffset - navbarHeight;
+
+                window.scrollTo({
+                    top: offsetPosition,
+                    behavior: 'smooth'
+                });
+            }
+        });
+    });
+
 });
