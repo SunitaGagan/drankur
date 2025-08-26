@@ -689,7 +689,10 @@ background: linear-gradient(179deg, rgba(0, 0, 0, 0.80) 0%, rgba(31, 30, 30, 0.1
   .img-block{margin: 30px auto;}
   .img-block img{ max-width:100%; height: auto; margin: auto; border: 1px solid #dcdcdc; border-radius: 4px;}
 .schdule-box{
-  background-color: #8cbee1;
+  background-color: #d3e9f9;
   color: #333;
 }
+.light-bg {
+    background-color: #d3e9f9;
+  }
 .schdule-box p{color: #333;}
