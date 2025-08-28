@@ -37,7 +37,7 @@ ul.hover-text > li > a:hover {
 .btn-blue:hover {
   background-color: #57a0d3;
 }
-.bg-black{
+.bg-black {
   background-color: #000;
   transition: ease-in-out 0.2s all;
 }
@@ -442,7 +442,7 @@ nav.bg-white ul > li > a.btn-blue {
 .physician-slider .owl-nav button.owl-prev,
 .physician-slider .owl-nav button.owl-next,
 .testimonial-slider .owl-nav button.owl-prev,
-.testimonial-slider .owl-nav button.owl-next{
+.testimonial-slider .owl-nav button.owl-next {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
@@ -453,7 +453,7 @@ nav.bg-white ul > li > a.btn-blue {
 }
 
 .physician-slider .owl-nav button.owl-prev,
-.testimonial-slider .owl-nav button.owl-prev{
+.testimonial-slider .owl-nav button.owl-prev {
   left: -30px;
 }
 
@@ -461,47 +461,49 @@ nav.bg-white ul > li > a.btn-blue {
 .testimonial-slider .owl-nav button.owl-next {
   right: -30px;
 }
-.bg-blue-ligt{
-  background-color: #DBECFE;
+.bg-blue-ligt {
+  background-color: #dbecfe;
 }
-.pt-120{
+.pt-120 {
   padding-top: 90px;
 }
-.pb-120{
+.pb-120 {
   padding-bottom: 90px;
 }
-.physicians-section p{line-height: 1.7rem;}
-.bg-blue-ligt > img{
+.physicians-section p {
+  line-height: 1.7rem;
+}
+.bg-blue-ligt > img {
   height: 289px;
   width: 100%;
   object-fit: cover;
   object-position: top;
 }
-.bg-blue-ligt p{
+.bg-blue-ligt p {
   font-size: 15px;
 }
-.appointment-section{
+.appointment-section {
   position: relative;
   z-index: 1;
 }
-.appointment-section:before{
+.appointment-section:before {
   position: absolute;
   z-index: 5;
   background-color: rgba(0, 25, 40, 0.5);
-  top:0;
+  top: 0;
   bottom: 0;
   left: 0;
   right: 0;
   content: "";
 }
-.sub-header{
+.sub-header {
   position: relative;
   z-index: 0;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
 }
-.sub-header::before{
+.sub-header::before {
   position: absolute;
   left: 0;
   right: 0;
@@ -517,68 +519,68 @@ nav.bg-white ul > li > a.btn-blue {
   background-color: #dcdcdc;
   padding: 40px 0;
 }
-.from-block{
+.from-block {
   border-radius: 8px;
   padding: 60px 80px;
 }
-.from-block label{
-color: #fff;
-margin-bottom: 15px;
-font-size: 1rem;
-display: block;
+.from-block label {
+  color: #fff;
+  margin-bottom: 15px;
+  font-size: 1rem;
+  display: block;
 }
-.sub-header h1{
+.sub-header h1 {
   font-size: 2rem;
 }
-.location-block::before{
-content: "";
-position: absolute;
-left: 0;
-right: 0;
-width: 80%;
-background-color: rgba(0, 0, 0, 0.7);
-z-index: 4;
-height: 80%;
-top: 0;
-bottom: 0;
-margin: auto;
-border-radius: 4px;
-transition: all ease-in 0.2s;
+.location-block::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  width: 80%;
+  background-color: rgba(0, 0, 0, 0.7);
+  z-index: 4;
+  height: 80%;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  border-radius: 4px;
+  transition: all ease-in 0.2s;
 }
-.location-block p{
+.location-block p {
   color: #fff;
 }
-.location-block h2{
+.location-block h2 {
   margin-bottom: 15px;
 }
-.location-block:hover::before{
+.location-block:hover::before {
   background-color: rgba(22, 2, 95, 1);
 }
 
-.services_list > li > a{
+.services_list > li > a {
   font-size: 1rem;
   color: #333;
-  display: block;  
+  display: block;
   padding-bottom: 10px;
   border-bottom: 1px dotted #bbbbbb;
   padding-top: 10px;
   transition: all ease-in 0.2s;
 }
-.services_list > li > a:hover{
+.services_list > li > a:hover {
   border-bottom: 1px dotted #fff;
   color: #00007a;
 }
 
-.services_card h3:hover{
+.services_card h3:hover {
   color: #00007a;
 }
-.services_list > li > a{
+.services_list > li > a {
   position: relative;
-  font-weight: 500;  
+  font-weight: 500;
 }
 
 .services_list > li > a::after {
-  content: '';
+  content: "";
   position: absolute;
   left: 0;
   bottom: 0;
@@ -592,107 +594,170 @@ transition: all ease-in 0.2s;
   width: 100%;
 }
 
-.service_img > a img,.service_img >  img{height: 100%;transition: transform 0.4s ease-in-out;}
-.service_img{ overflow: hidden;}
-.service_img:hover img,.service_img a:hover img {
- transform: scale(1.2);
+.service_img > a img,
+.service_img > img {
+  height: 100%;
+  transition: transform 0.4s ease-in-out;
 }
-ul.list_sub_services{
+.service_img {
+  overflow: hidden;
+}
+.service_img:hover img,
+.service_img a:hover img {
+  transform: scale(1.2);
+}
+ul.list_sub_services {
   padding-top: 25px;
-
 }
-.list_sub_services > li > a{
+.list_sub_services > li > a {
   display: block;
   padding: 20px 25px;
   border-bottom: 1px solid #bbbbbb;
   transition: all ease-in-out 0.3s;
   font-weight: 500;
 }
-.list_sub_services > li > a:hover,.list_sub_services > li > a.active{
+.list_sub_services > li > a:hover,
+.list_sub_services > li > a.active {
   background-color: #fff;
   border-bottom: 1px solid #00007a;
   color: #00007a;
-  box-shadow: 0  2px 0px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 2px 0px rgba(0, 0, 0, 0.1);
 }
-.left-side{  background-color: #eee;}
-.left-side >h2{padding: 15px 25px;}
+.left-side {
+  background-color: #eee;
+}
+.left-side > h2 {
+  padding: 15px 25px;
+}
 .services_over {
   position: relative;
 }
-.services_over h1{
+.services_over h1 {
   font-size: 28px;
   font-weight: 700;
   margin-bottom: 10px;
 }
-.services_over h2{font-size: 18px;
+.services_over h2 {
+  font-size: 18px;
   font-weight: 500;
   margin-bottom: 30px;
 }
-  .sub_section{
-    position: relative;
-    padding: 10px 0;
-  }
-  .sub_section ul{ padding: 20px 15px;}
-  .sub_section ul > li{
-    list-style-position: outside;
-  }
-  html {
-    scroll-behavior: smooth; /* CSS smooth scroll */
-  }
-  .hero-slider .item{
-    position: relative;
-    z-index: 0;
-  }
-  .contact_header{
-    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
-    
-  }
-  .hero-slider .item::before{
-    background: #000;
-background: linear-gradient(179deg, rgba(0, 0, 0, 0.80) 0%, rgba(31, 30, 30, 0.18) 100%);
-    content: "";
-    position: absolute;
-    left: 0;
-    right: 0;
-    top:0;
-    bottom: 0;
-    width: 100%;
-    height: 100%;
-    z-index: 1;
-  }
-  #overview,
-  #pre_procedural_details,
-  #procedure_details,
-  #post_procedural_details{
-    scroll-margin-top: 120px;
-  }
-  #pre_procedural_details,
-  #overview p, #pre_procedural_details p,#procedure_details p,#post_procedural_details li,#procedure_details li,#pre_procedural_details li, #overview li{ color: #333;}
-  #overview h1,
-  #pre_procedural_details h1,
-  #procedure_details h1,
-  #post_procedural_details h1{ font-size: 22px; font-weight: 800;
-  color: #333;}
-  .detail_sub_services h3{font-size: 24px; font-weight: 600;
-    color: #333; margin-top: 30px; margin-bottom: 30px;}
-  .details_red_box{
-    border-left: 4px solid #00007a;
-    background-color: rgba(0, 0, 122, 0.1);
-  }
-  #overview p,
-  #pre_procedural_details p,
-  #procedure_details p,
-  #post_procedural_details p{
-    margin-bottom: 20px;
-  }
-  .details_red_box h3{ color: #00007a;}
-  .img-block{margin: 30px auto;}
-  .img-block img{ max-width:100%; height: auto; margin: auto; border: 1px solid #dcdcdc; border-radius: 4px;}
-.schdule-box{
-  background-color: #d3e9f9;
+.sub_section {
+  position: relative;
+  padding: 10px 0;
+}
+.sub_section ul {
+  padding: 20px 15px;
+}
+.sub_section ul > li {
+  list-style-position: outside;
+}
+html {
+  scroll-behavior: smooth; /* CSS smooth scroll */
+}
+.hero-slider .item {
+  position: relative;
+  z-index: 0;
+}
+.contact_header {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+}
+.hero-slider .item::before {
+  background: #000;
+  background: linear-gradient(
+    179deg,
+    rgba(0, 0, 0, 0.8) 0%,
+    rgba(31, 30, 30, 0.18) 100%
+  );
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+#overview,
+#pre_procedure_details,
+#procedure_details,
+#post_procedure_details {
+  scroll-margin-top: 120px;
+}
+#pre_procedure_details,
+#overview p,
+#pre_procedure_details p,
+#procedure_details p,
+#post_procedure_details li,
+#procedure_details li,
+#pre_procedure_details li,
+#overview li {
+  color: #333;
+}
+#overview h1,
+#pre_procedure_details h1,
+#procedure_details h1,
+#post_procedure_details h1 {
+  font-size: 22px;
+  font-weight: 800;
+  color: #333;
+}
+.detail_sub_services h3 {
+  font-size: 24px;
+  font-weight: 600;
+  color: #333;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+.details_red_box {
+  border-left: 4px solid #00007a;
+ 
+}
+#overview p,
+#pre_procedure_details p,
+#procedure_details p,
+#post_procedure_details p {
+  margin-bottom: 20px;
+}
+.details_red_box h3 {
+  color: #00007a;
+}
+.img-block {
+  margin: 30px auto;
+}
+.img-block img {
+  max-width: 100%;
+  height: auto;
+  margin: auto;
+  border: 1px solid #dcdcdc;
+  border-radius: 4px;
+}
+.schdule-box {
+  background-color: rgba(0, 0, 122, 0.1);
   color: #333;
 }
 .light-bg {
-    background-color: #d3e9f9;
-  }
-.schdule-box p{color: #333;}
+  background-color: #d3e9f9;
+}
+.schdule-box p {
+  color: #333;
+}
+.schedule-box h3{
+  font-weight: 700;
+  font-size: 20px;
+  margin-bottom: 12px;
+}
+.schedule-box a{
+  font-weight: 800;
+  color: #00007a;
+  transition: ease-in 0.2s all;
+}
+.schedule-box a:hover{ text-decoration:underline;}
+.schedule-box .icon > svg{
+  width: 35px;
+  height: auto;
+  margin: 10px auto 15px auto;
+  stroke: rgb(0, 0, 122) !important;
+}
+.schedule-box .icon > svg>path{stroke: rgb(0, 0, 122) !important;}
