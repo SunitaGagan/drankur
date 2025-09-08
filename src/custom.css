@@ -307,7 +307,7 @@ ul.contact > li > a:hover,
   top: 0;
   left: 0;
   right: 0;
-  z-index: 4;
+  z-index: 30;
 }
 .header-top .bg-transparent .blue-logo {
   display: none;
@@ -596,8 +596,8 @@ nav.bg-white ul > li > a.btn-blue {
 
 .service_img > a img,
 .service_img > img {
-  height: 100%;
-  transition: transform 0.4s ease-in-out;
+  height:auto;
+  transition: transform 0.4s ease-in-out;  
 }
 .service_img {
   overflow: hidden;
@@ -761,3 +761,11 @@ html {
   stroke: rgb(0, 0, 122) !important;
 }
 .schedule-box .icon > svg>path{stroke: rgb(0, 0, 122) !important;}
+@media  (max-width: 767px) {
+ul.list_sub_services{display: flex;
+  flex-wrap: wrap;}
+  ul.list_sub_services >li{
+    width: 50%;
+  }
+  .pt-120.side-fixed-bar{ padding-top: 0px;}
+}
