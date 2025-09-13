@@ -1,0 +1,387 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="src/output.css" rel="stylesheet">
+    <link href="./src/custom.css" rel="stylesheet">
+    <script src="./src/script.js"></script>
+    <link href="./src/owl.carousel.min.css" rel="stylesheet">
+    <script src="./src/jquery.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="./src/owl.carousel.min.js"></script>
+    <link href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" rel="stylesheet">
+
+</head>
+
+<body>
+    <header class="header-top">
+        <div class="bg-black text-white p-4 ">
+            <div class="container mx-auto px-4">
+                <div class="flex gap-4">
+                    <div class="w-1/2">
+                        <ul class="flex  items-center hover-text">
+                            <li class="pr-4">
+                                <a href="#">
+                                    <img src="images/linkedin-outline.svg" alt="linkedin" />
+                                </a>
+                            </li>
+                            <li class="pr-4">
+                                <a href="#">
+                                    <img src="images/instagram-line.svg" alt="instagram" />
+                                </a>
+                            </li>
+                            <li class="pr-4">
+                                <a href="#">
+                                    <img src="images/facebook.svg" alt="facebook" />
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <img src="images/youtube-line.svg" alt="youtube" />
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="w-1/2">
+                        <ul class="flex justify-end hover-text">
+                            <li>
+                                <a href="tel:8005550199" class="flex items-center">
+                                    <img src="images/call.svg" alt="call" />
+                                    <span class="pl-3"> 800‑555‑0199</span></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <nav class="bg-transparent  z-50 navbar" role="navigation" aria-label="Main navigation" id="navbar">
+            <div class="container mx-auto px-4">
+
+                <div class=" py-3 flex justify-between items-center flex-wrap">
+
+                    <!-- 🔹 Site Logo -->
+                    <a href="/" class="logo" aria-label="Homepage">
+                        <img src="images/white_logo.png" alt="logo" class="white-logo" />
+                        <img src="images/blue_logo.png" alt="logo" class="blue-logo" />
+                    </a>
+
+                    <!-- 🔹 Mobile Menu Toggle -->
+                    <button id="menu-toggle" class="lg:hidden  focus:outline-none" aria-label="Toggle Menu">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M4 6h16M4 12h16M4 18h16" />
+                        </svg>
+                    </button>
+
+                    <!-- 🔹 Navigation Links -->
+                    <ul id="menu" class="hidden lg:flex flex-col lg:flex-row lg:items-center lg:space-x-6 w-full lg:w-auto mt-4 lg:mt-0">
+
+                        <li>
+                            <a href="index.html" class="block px-3 py-2 text-gray-700 hover:text-blue-600">Home</a>
+                        </li>
+
+                        <li>
+                            <a href="physicians.html" class="block px-3 py-2 text-gray-700 hover:text-blue-600">Physicians</a>
+                        </li>
+
+                        <!-- 🔽 Services Dropdown -->
+                        <li class="relative group">
+                            <a href="services.html" class="flex items-center px-3 py-2 text-gray-700 hover:text-blue-600 focus:outline-none" aria-haspopup="true" aria-expanded="false" id="services-button">
+                                Services
+                                <svg class="ml-1 w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M19 9l-7 7-7-7"></path>
+                                </svg>
+                            </a>
+
+                            <!-- Dropdown Menu -->
+                            <ul id="services-dropdown" class="hidden group-hover:block md:absolute bg-white shadow-md pt-2 md:min-w-[175px] rounded-md md:z-50" aria-label="Submenu">
+                                <li><a href="conditions_treated.html" class="block px-4 py-2 text-gray-700">Conditions
+                                        Treated</a>
+                                </li>
+                                <li><a href="treatment_offer.html" class="block px-4 py-2 text-gray-700">Treatment
+                                        Offer</a></li>
+
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="blog.html" class="block px-3 py-2 text-gray-700">Blog</a>
+                        </li>
+                        <li>
+                            <a href="locations.html" class="block px-3 py-2 text-gray-700 ">Locations</a>
+                        </li>
+                        <li>
+                            <a href="appointment_now.html" class="block px-3 py-2 text-gray-700 btn-blue">Schedule
+                                Appointment Now</a>
+                        </li>
+
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!-- banner -->
+    <div class="bg-[#4A4A4A] text-white  flex flex-col justify-between pt-36 sub-header" style="background-image: url(images/neck_pain.png);">
+        <div class="container mx-auto px-4 relative z-10">
+            <!-- Centered Title -->
+            <div class="flex-grow flex items-center justify-center pt-16 pb-16">
+                <h1 class="font-bold uppercase">Postherpetic Neuralgia
+                </h1>
+            </div>
+            <!-- Breadcrumb Navigation -->
+            <div class="p-4 text-sm">
+                <nav class="text-white">
+                    <a href="index.html" class="hover:underline">Home</a>
+                    <span class="mx-1">/</span>
+                    <a href="services.html" class="hover:underline">Services</a>
+                    <span class="mx-1">/</span>
+                    <a href="conditions_treated.html" class="hover:underline">Conditions Treated</a>
+                    <span class="mx-1">/</span>
+                    <a href="condi-neu-and-com-pai-syn.html" class="hover:underline"> <span class="font-bold">Neuropathic and Complex Pain Syndromes
+                        </span></a>
+                    <span class="mx-1">/</span>
+                    <span class="font-bold">Postherpetic Neuralgia </span>
+                </nav>
+            </div>
+        </div>
+    </div>
+    <main>
+        <section class="sub_service_section bg-triangle">
+            <div class="container mx-auto px-4 relative z-10">
+                <div class="grid grid-cols-1 md:grid-cols-4">
+                    <!-- Sidebar -->
+                    <aside class="pt-120 text-black md:col-span-1 left-side sticky top-0 h-screen">
+                        <h2 class="font-semibold text-blue-700 ">
+                            <a href="condi-neu-and-com-pai-syn.html" target="_blank" class="flex items-center justify-between">
+                                Neuropathic and Complex Pain Syndromes
+
+                                <span class="text-xl"><i class="fas fa-angle-down"></i></span>
+                            </a>
+                        </h2>
+                        <ul class="list_sub_services">
+                            <li>
+                                <a href="condi-com-reg-pai-syn.html" traget="_blank">Complex Regional Pain Syndrome
+                                    (CRPS)</a>
+                            </li>
+                            <li><a href="condi-pos-neu.html"> Postherpetic Neuralgia
+
+                                </a></li>
+                            <li><a href="condi-dia-per-neu.html"> Diabetic Peripheral Neuropathy
+                                </a></li>
+                            <li><a href="condi-che-ind-neu.html"> Chemotherapy-Induced Neuropathy</a></li>
+                            <li><a href="condi-pha-lim-pai.html"> Phantom Limb Pain
+
+                                </a></li>
+
+                        </ul>
+                    </aside>
+                    <!-- Main Content -->
+                    <main class="p-8 space-y-8 md:col-span-3 pt-120 lg:pl-16 pb-26">
+
+                        <div class="services_over">
+                            <h1>Postherpetic Neuralgia </h1>
+                            <h2>
+                                Nerve Pain That Persists After Shingles</h2>
+                        </div>
+                        <div class="light-bg rounded-lg shadow-md p-6">
+                            <section class="mb-10">
+                                <h2 class="text-2xl font-semibold mb-3">Overview</h2>
+                                <p class="mb-4">
+                                    Postherpetic neuralgia is a chronic nerve pain condition that can develop after an outbreak of shingles (herpes zoster). It occurs when the virus causes long-term irritation or damage to the nerves, even after the skin rash has healed. The pain may be
+                                    burning, stabbing, or electric-like and often affects the chest, back, or face. It can last for months or even years and tends to be more common in older adults or those with weakened immune systems.
+                                </p>
+
+                            </section>
+
+                            <section class="mb-10">
+                                <h2 class="text-2xl font-semibold mb-3">Common Symptoms</h2>
+                                <ul class="list-disc list-inside space-y-2 text-gray-700">
+                                    <li>Persistent pain in the area where the shingles rash appeared</li>
+                                    <li>Burning, stabbing, or aching sensations</li>
+                                    <li>Extreme sensitivity to touch (even clothing or light contact)</li>
+                                    <li>Itching or numbness in the affected area</li>
+                                    <li>Disrupted sleep or mood due to ongoing discomfort</li>
+                                </ul>
+                            </section>
+
+                            <section class="mb-10">
+                                <h2 class="text-2xl font-semibold mb-3">Conditions We Treat</h2>
+                                <ul class="list-disc list-inside space-y-2 text-blue-700">
+                                    <li>Prior episode of shingles (herpes zoster)</li>
+                                    <li>Nerve damage caused by the virus</li>
+                                    <li>Increased risk with age or immune suppression</li>
+                                    <li>Pain that continues beyond 3 months after the shingles rash</li>
+                                </ul>
+
+                            </section>
+
+                            <section class="mb-10">
+                                <h2 class="text-2xl font-semibold mb-3">How We Can Help
+                                </h2>
+                                <p> At Restore Spine and Pain, we focus on relieving nerve pain and restoring quality of life for patients suffering from postherpetic neuralgia. Our treatment plans are personalized and may include medications, nerve blocks,
+                                    or neuromodulation to calm irritated nerves</p>
+                                <h2 class="text-2xl font-semibold mb-3"> Treatment Options Offered
+                                </h2>
+                                <ol class="list-decimal list-inside space-y-2 text-gray-700">
+                                    <li>Non-opioid medications such as nerve stabilizers</li>
+                                    <li>Topical agents</li>
+                                    <li>Image-guided nerve blocks for pain relief</li>
+                                    <li>Peripheral nerve stimulation (PNS) for chronic, treatment-resistant cases</li>
+                                    <li>Multimodal support including sleep and mood management strategies</li>
+                                </ol>
+
+                            </section>
+
+
+
+                        </div>
+                        <div class="bg-blue-50 border border-blue-200 rounded-lg shadow-sm pl-6 pr-6 pt-8 pb-8 text-center schdule-box">
+                            <h3 class="text-xl font-bold text-blue-700 mb-3">Schedule a Consultation</h3>
+                            <p class="mb-4">
+                                If you’ve had shingles and are still experiencing burning or nerve pain weeks or months later, postherpetic neuralgia may be the cause. At Restore Spine and Pain, we offer targeted treatments to reduce pain and improve function. Contact us today to schedule
+                                your consultation</p>
+
+                            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                                <div class="bg-white pt-8 pb-8 pl-5 pr-5 rounded-xl schedule-box">
+
+                                    <span class="icon"><svg fill="#000000" width="800px" height="800px"
+                                            viewBox="0 0 32 32" version="1.1" xmlns="http://www.w3.org/2000/svg">
+                                            <title>phone-call</title>
+                                            <path
+                                                d="M18.037 6.635c-0.011-0.001-0.023-0.001-0.035-0.001-0.414 0-0.75 0.336-0.75 0.75 0 0.399 0.312 0.726 0.706 0.749l0.002 0c3.533 0.231 6.311 3.153 6.311 6.723 0 0.186-0.008 0.37-0.022 0.552l0.002-0.024c0 0.414 0.336 0.75 0.75 0.75s0.75-0.336 0.75-0.75v0c0.009-0.143 0.014-0.31 0.014-0.479 0-4.38-3.397-7.967-7.7-8.269l-0.026-0.001zM17.963 2.749c0.449 0.022 10.998 0.688 10.998 12.635 0 0.414 0.336 0.75 0.75 0.75s0.75-0.336 0.75-0.75v0c0.015-0.238 0.024-0.515 0.024-0.795 0-7.059-5.471-12.841-12.405-13.335l-0.043-0.002c-0.009-0-0.019-0.001-0.029-0.001-0.403 0-0.732 0.314-0.757 0.71l-0 0.002c-0.001 0.011-0.001 0.024-0.001 0.037 0 0.401 0.315 0.729 0.711 0.749l0.002 0zM30.637 23.15c-0.109-0.675-0.334-1.281-0.654-1.823l0.013 0.024c-0.114-0.186-0.301-0.317-0.521-0.353l-0.004-0.001-8.969-1.424c-0.035-0.006-0.076-0.009-0.117-0.009-0.207 0-0.395 0.083-0.531 0.218l0-0c-0.676 0.68-1.194 1.516-1.496 2.451l-0.012 0.044c-4.016-1.64-7.141-4.765-8.742-8.675l-0.038-0.105c0.978-0.314 1.814-0.833 2.493-1.509l-0 0c0.136-0.136 0.22-0.324 0.22-0.531 0-0.041-0.003-0.081-0.010-0.12l0.001 0.004-1.425-8.969c-0.036-0.224-0.167-0.412-0.35-0.524l-0.003-0.002c-0.505-0.301-1.094-0.522-1.724-0.626l-0.029-0.004c-0.315-0.070-0.677-0.111-1.048-0.111-0.025 0-0.050 0-0.075 0.001l0.004-0h-0.006c-3.497 0.024-6.326 2.855-6.347 6.351v0.002c0.015 12.761 10.355 23.102 23.115 23.117h0.002c3.5-0.023 6.331-2.854 6.354-6.351v-0.002c0-0.020 0-0.044 0-0.068 0-0.356-0.036-0.703-0.106-1.038l0.006 0.033zM24.383 29.076c-11.933-0.014-21.602-9.684-21.616-21.616v-0.001c0.019-2.673 2.182-4.835 4.854-4.853h0.002c0.016-0 0.036-0 0.055-0 0.272 0 0.537 0.030 0.793 0.086l-0.024-0.005c0.366 0.060 0.695 0.161 1.003 0.3l-0.025-0.010 1.302 8.202c-0.628 0.528-1.404 0.901-2.257 1.050l-0.029 0.004c-0.355 0.064-0.62 0.37-0.62 0.739 0 0.088 0.015 0.172 0.043 0.25l-0.002-0.005c1.772 5.072 5.695 8.994 10.646 10.729l0.121 0.037c0.073 0.026 0.157 0.041 0.245 0.041 0.368 0 0.674-0.265 0.737-0.615l0.001-0.005c0.153-0.882 0.526-1.658 1.061-2.295l-0.006 0.007 8.201 1.303c0.133 0.294 0.237 0.636 0.296 0.994l0.003 0.024c0.046 0.219 0.073 0.471 0.073 0.729 0 0.018-0 0.035-0 0.053l0-0.003c-0.016 2.675-2.179 4.84-4.852 4.859h-0.002z">
+                                            </path>
+                                        </svg> </span>
+                                    <h3>Call Us </h3>
+                                    <p>(984) 444-8824 </p>
+                                    <a href="tel:9844448824" class="text-blue-600 hover:underline">
+                                        Call Now
+                                    </a>
+                                </div>
+                                <div class="bg-white pt-8 pb-8 pl-5 pr-5 rounded-xl schedule-box">
+                                    <span class="icon"><svg width="800px" height="800px" viewBox="0 0 24 24" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M20 12.5V6.8C20 5.11984 20 4.27976 19.673 3.63803C19.3854 3.07354 18.9265 2.6146 18.362 2.32698C17.7202 2 16.8802 2 15.2 2H8.8C7.11984 2 6.27976 2 5.63803 2.32698C5.07354 2.6146 4.6146 3.07354 4.32698 3.63803C4 4.27976 4 5.11984 4 6.8V17.2C4 18.8802 4 19.7202 4.32698 20.362C4.6146 20.9265 5.07354 21.3854 5.63803 21.673C6.27976 22 7.1198 22 8.79986 22H12.5M14 11H8M10 15H8M16 7H8M15 19L18 22M18 22L21 19M18 22V16"
+                                                stroke="#000000" stroke-width="2" stroke-linecap="round"
+                                                stroke-linejoin="round" />
+                                        </svg> </span>
+                                    <h3> New Patients </h3>
+                                    <p> Download and complete forms before your visit </p>
+                                    <a href="your-file.pdf" download class="bg-blue-600  px-4 py-2 rounded-lg hover:bg-blue-700">
+                                        Download From
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                    </main>
+                </div>
+            </div>
+        </section>
+        <section class="bg-cover bg-center" style="background-image: url('images/appointment_bg.jpg');">
+            <div class="container mx-auto">
+                <div class=" flex items-center justify-between py-20 px-6">
+
+                    <!-- Left Text -->
+                    <h2 class="text-white text-2xl font-bold">
+                        Schedule an Appointment Now
+                    </h2>
+
+                    <!-- Right Button -->
+                    <a href="#" class="bg-white text-black px-8 py-3 rounded-full font-medium border border-blue-900 hover:bg-gray-100 transition">
+                        Schedule Appointment Now
+                    </a>
+
+                </div>
+            </div>
+        </section>
+    </main>
+
+
+    <footer>
+        <div class="text-center pt-20  bg-[#001928]">
+            <div class="container px-4 mx-auto">
+                <!-- Paragraph -->
+                <p class=" text-gray-300 leading-relaxed text-sm sm:text-base mb-10">
+                    Lorem ipsum dolor sit amet consectetur. Nisl faucibus in integer malesuada sollicitudin magnis sodales. Tincidunt tellus a in imperdiet tincidunt. Turpis adipiscing sagittis at orci. Quisque velit vulputate et fusce ac et. Faucibus ultrices gravida tortor
+                    tristique ipsum. Feugiat feugiat leo suspendisse lectus pharetra felis cursus. Facilisi ridiculus laoreet et sit ipsum. Sit vulputate habitasse lorem tempor vulputate.
+                </p>
+
+                <!-- Social + Logo + Phone -->
+
+                <!-- Social icons -->
+                <div class="flex gap-4 items-center justify-center flex-col md:flex-row pb-10 pt-8">
+                    <div class="md:w-1/3">
+                        <ul class="flex  items-center hover-text social-icon">
+                            <li class="pr-9">
+                                <a href="#">
+                                    <img src="images/linkedin-outline.svg" alt="twitter" />
+                                </a>
+                            </li>
+                            <li class="pr-9">
+                                <a href="#">
+                                    <img src="images/instagram-line.svg" alt="instagram" />
+                                </a>
+                            </li>
+                            <li class="pr-9">
+                                <a href="#">
+                                    <img src="images/facebook.svg" alt="facebook" />
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <img src="images/youtube-line.svg" alt="youtube" />
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="md:w-1/3">
+                        <!-- Logo + Text -->
+                        <div class="flex flex-col items-center">
+                            <img src="images/white-logo.svg" alt="Logo" class="h-16 mb-1">
+
+                        </div>
+                    </div>
+                    <div class="md:w-1/3">
+                        <!-- Phone -->
+                        <ul class="flex justify-end contact">
+                            <li>
+                                <a href="tel:8005550199" class="flex items-center">
+                                    <img src="images/call.svg" alt="call" />
+                                    <span class="pl-6"> 800‑555‑0199</span></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+
+                <!-- Navigation links -->
+                <div class="flex flex-wrap justify-center gap-6 text-sm sm:text-bas text-gray-300 pb-16 pt-4">
+                    <ul class="flex justify-center font-normal footer-nav flex-wrap">
+                        <li> <a href="index.html"> HOME</a></li>
+                        <li> <a href="physicians.html"> PHYSICIANS</a></li>
+                        <li> <a href="services.html"> SERVICES</a></li>
+                        <li> <a href="blog.html"> BLOG</a></li>
+                        <li> <a href="location.html"> LOCATIONS</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!-- Copyright -->
+        <div class="border-t border-gray-700 pt-8 pb-8 bg-[#00111B]">
+            <div class="container px-4 mx-auto">
+                <div class="text-sm text-white flex justify-between mx-auto">
+                    <p>© Copyright 2025</p>
+                    <p>All rights reserved.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="src/script.js"></script>
+</body>
+
+</html>
