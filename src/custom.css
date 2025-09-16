@@ -596,8 +596,9 @@ nav.bg-white ul > li > a.btn-blue {
 
 .service_img > a img,
 .service_img > img {
-  height:auto;
-  transition: transform 0.4s ease-in-out;  
+  height:100%;
+  transition: transform 0.4s ease-in-out;
+  object-position: top center;
 }
 .service_img {
   overflow: hidden;
@@ -768,4 +769,20 @@ ul.list_sub_services{display: flex;
     width: 50%;
   }
   .pt-120.side-fixed-bar{ padding-top: 0px;}
+}
+.services_card{
+  border: 1px solid #efefef;
+  transition: all 0.2s ease-in;
+}
+.services_card:hover{
+  border: 1px solid #00007a;
+}
+.services_card:hover h3{
+  color: #00007a;
+}
+.profile-img {
+  width: 280px;
+  height: 280px;
+  border-radius: 100%;
+  margin: 14px auto;
 }
