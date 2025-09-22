@@ -25,6 +25,8 @@ document.addEventListener("DOMContentLoaded", function() {
     menuToggle.addEventListener("click", function() {
         // Toggle the 'hidden' class on the menu to show or hide it
         menu.classList.toggle("hidden");
+        menu.classList.add("bg-white");
+        menu.classList.add("text-black");
     });
 
     // Services dropdown toggle for mobile view
@@ -122,3 +124,20 @@ $(document).ready(function() {
         });
     });
 });
+// fix-sidebar.js
+(function($) {
+    function adjustSidebar() {
+        var navbarHeight = $(".header-top").outerHeight() || 0;
+        $(".side-fixed-bar").css("top", navbarHeight + "px");
+    }
+
+    // Run on page load
+    $(document).ready(function() {
+        adjustSidebar();
+    });
+
+    // Run on window resize
+    $(window).on("resize", function() {
+        adjustSidebar();
+    });
+})(jQuery);
