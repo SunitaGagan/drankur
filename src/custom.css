@@ -34,7 +34,7 @@ ul.hover-text > li > a:hover {
   padding: 10px 25px;
   transition: all ease-in 0.3s;
 }
-.btn-blue:hover {
+.navbar ul > li:last-child > a.btn-blue:hover,.btn-blue:hover {
   background-color: #57a0d3;
 }
 .bg-black {
@@ -52,9 +52,9 @@ ul#services-dropdown li > a {
 }
 .navbar ul > li > a:hover,
 ul#services-dropdown li > a:hover {
-  background-color: #57a0d3;
+  background-color:#00007a;
   color: #fff;
-  
+  border-radius: 50px;
 }
 .section {
   padding: 80px 0;
@@ -127,7 +127,7 @@ ul.contact > li > a:hover,
 }
 .services-box::before {
   position: absolute;
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0.3);
   top: 0;
   bottom: 0;
   left: 0;
@@ -391,12 +391,12 @@ nav.bg-white ul > li > a.btn-blue {
 }
 @media screen and (min-width: 768px) {
   .banner-text > h1 {
-    font-size: 4rem;
+    font-size: 3rem;
     font-weight: 800;
     line-height: 4.5rem;
   }
   .banner-text > h3 {
-    font-size: 3rem;
+    font-size: 2rem;
     line-height: 4rem;
     font-weight: 500;
   }
@@ -839,5 +839,26 @@ ul.hover-text > li > a{
   padding-left: 0;
   
 }
+}
+.services-section .services-list a{
+  display: block;
+}
+.services-section .services-box{
+  height:380px;
+}
+.services-section .services-box .service-info h3{
+  text-align: center;
+}
+.add-box{        font-size: 25px;
+  font-weight: 600;
+  color: #fff;
+  align-items: center;}
+.add-box img{ width: 24px;
+height: auto;
+margin-right: 24px;}
+.testimonial-slider h4{
+  margin-bottom: 10px;
+  font-size: 20px;
+  font-weight: 800;
 }
 
