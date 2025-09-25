@@ -142,17 +142,29 @@ $(document).ready(function() {
     });
 })(jQuery);
 
-async function loadHTML(id, file) {
+async function loadHTML(id, file, callback) {
     try {
         let res = await fetch(file);
         let text = await res.text();
         document.getElementById(id).innerHTML = text;
+        if (callback) callback(); // callback run after load
     } catch (err) {
         console.error("Error loading HTML:", err);
     }
 }
 
 window.addEventListener("DOMContentLoaded", () => {
-    loadHTML("header", "header.html");
+    loadHTML("header", "header.html", initScrollScript); // header load hone ke baad scroll code call
     loadHTML("footer", "footer.html");
 });
+
+function initScrollScript() {
+    window.addEventListener("scroll", () => {
+        let header = document.getElementById("header");
+        if (window.scrollY > 50) {
+            header.classList.add("sticky");
+        } else {
+            header.classList.remove("sticky");
+        }
+    });
+}
