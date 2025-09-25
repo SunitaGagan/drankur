@@ -1,0 +1,120 @@
+<header class="header-top">
+    <div class="contact_header text-white p-4 ">
+        <div class="lg:container mx-auto px-4">
+            <div class="flex gap-4">
+                <div class="w-1/3">
+                    <ul class="flex  items-center hover-text">
+                        <li class="pr-4">
+                            <a href="#">
+                                <img src="images/linkedin-outline.svg" alt="linkedin" />
+                            </a>
+                        </li>
+                        <li class="pr-4">
+                            <a href="#">
+                                <img src="images/instagram-line.svg" alt="instagram" />
+                            </a>
+                        </li>
+                        <li class="pr-4">
+                            <a href="#">
+                                <img src="images/facebook.svg" alt="facebook" />
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="images/youtube-line.svg" alt="youtube" />
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="w-1/3">
+                    <ul class="flex justify-center hover-text">
+                        <li>
+                            <a href="#" class="flex items-center">
+                                <img src="images/maplocation.png" alt="" />
+                                <span class="pl-3"> 1505 Werrington Drive 
+                                    Holly Springs, NC 27540</span></a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="w-1/3">
+                    <ul class="flex justify-end hover-text">
+                        <li>
+                            <a href="tel:8005550199" class="flex items-center">
+                                <img src="images/call.svg" alt="call" />
+                                <span class="pl-3"> (984) 444-8824</span></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <nav class="bg-transparent  z-50 navbar" role="navigation" aria-label="Main navigation" id="navbar">
+        <div class="lg:container mx-auto px-4">
+
+            <div class=" py-3 flex justify-between items-center flex-wrap">
+
+                <!-- 🔹 Site Logo -->
+                <a href="/" class="logo" aria-label="Homepage">
+                    <img src="images/white_logo.png" alt="logo" class="white-logo" />
+                    <img src="images/blue_logo.png" alt="logo" class="blue-logo" />
+                </a>
+
+                <!-- 🔹 Mobile Menu Toggle -->
+                <button id="menu-toggle" class="lg:hidden  focus:outline-none" aria-label="Toggle Menu">
+                  <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                      xmlns="http://www.w3.org/2000/svg">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                          d="M4 6h16M4 12h16M4 18h16" />
+                  </svg>
+              </button>
+
+                <!-- 🔹 Navigation Links -->
+                <ul id="menu" class="hidden lg:flex flex-col lg:flex-row lg:items-center lg:space-x-6 w-full lg:w-auto mt-4 lg:mt-0">
+
+                    <li>
+                        <a href="index.html" class="block px-3 py-2 text-gray-700 hover:text-blue-600">Home</a>
+                    </li>
+
+                    <li>
+                        <a href="physicians.html" class="block px-3 py-2 text-gray-700 hover:text-blue-600">Physicians</a>
+                    </li>
+
+                    <!-- 🔽 Services Dropdown -->
+                    <li class="relative group">
+                        <a href="services.html" class="flex items-center px-3 py-2 text-gray-700 hover:text-blue-600 focus:outline-none" aria-haspopup="true" aria-expanded="false" id="services-button">
+                          Services
+                          <svg class="ml-1 w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                              xmlns="http://www.w3.org/2000/svg">
+                              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                  d="M19 9l-7 7-7-7"></path>
+                          </svg>
+                      </a>
+
+                        <!-- Dropdown Menu -->
+                        <ul id="services-dropdown" class="hidden group-hover:block md:absolute bg-white shadow-md pt-2 md:min-w-[195px] rounded-md md:z-50" aria-label="Submenu">
+                            <li><a href="conditions_treated.html" class="block px-4 py-2 text-gray-700">Conditions
+                                  Treated</a>
+                            </li>
+                            <li><a href="treatment-offer.html" class="block px-4 py-2 text-gray-700">Treatment
+                                  Offer</a></li>
+                            <li><a href="accident-care.html" class="block px-4 py-2 text-gray-700">Injury & Accident
+                                  Care</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="blog.html" class="block px-3 py-2 text-gray-700">Blog</a>
+                    </li>
+                    <li>
+                        <a href="locations.html" class="block px-3 py-2 text-gray-700 ">Locations</a>
+                    </li>
+
+                    <li>
+                        <a href="appointment_now.html" class="block px-3 py-2 text-gray-700 btn-blue">Schedule
+                          Appointment Now</a>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+    </nav>
+</header>

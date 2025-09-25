@@ -8,7 +8,7 @@ p {
 ul.hover-text > li > a > img {
   filter: grayscale(100%) brightness(1);
   transition: all 0.3s ease;
-  width: 22px;
+  width: auto;
   height: 22px;
 }
 ul.hover-text > li > a {
@@ -64,12 +64,14 @@ ul.social-icon > li > a > img {
   height: 30px;
 }
 ul.contact > li > a > img {
-  width: 30px;
-  height: 30px;
+  width: 25px;
+  height: auto;
+}
+ul.contact > li{
+  margin-bottom: 15px;
 }
 ul.contact > li > a {
-  font-size: 28px;
-  font-weight: 600;
+  font-size: 17px;
   color: #fff;
 }
 .footer-nav > li > a {
@@ -419,7 +421,7 @@ nav.bg-white ul > li > a.btn-blue {
   }
   .map-block > iframe {
     width: 100%;
-    height: 550px;
+    height: 250px;
   }
 }
 .hero-slider .item img {
@@ -849,16 +851,34 @@ ul.hover-text > li > a{
 .services-section .services-box .service-info h3{
   text-align: center;
 }
-.add-box{        font-size: 25px;
-  font-weight: 600;
+.add-box{        font-size: 17px;
+  
   color: #fff;
   align-items: center;}
 .add-box img{ width: 24px;
 height: auto;
-margin-right: 24px;}
+margin-right: 20px;
+opacity: 0.8;}
 .testimonial-slider h4{
   margin-bottom: 10px;
   font-size: 20px;
   font-weight: 800;
+}
+.owl-dots {
+  display: block !important;
+  text-align: center;
+  margin-top: 15px;
+}
+.testimonial-slider  button.owl-dot >  span{
+  width: 12px;
+  height: 12px;
+  border-radius: 100%;
+  background-color: rgba(0, 0, 0, 0.3);
+  display: block;
+  margin-left: 4px;
+  margin-right: 4px;
+}
+.testimonial-slider  button.owl-dot.active >  span{
+  background-color: rgba(87, 160, 211, 1);
 }
 
