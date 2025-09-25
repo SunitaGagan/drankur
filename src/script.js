@@ -157,14 +157,3 @@ window.addEventListener("DOMContentLoaded", () => {
     loadHTML("header", "header.html", initScrollScript); // header load hone ke baad scroll code call
     loadHTML("footer", "footer.html");
 });
-
-function initScrollScript() {
-    window.addEventListener("scroll", () => {
-        let header = document.getElementById("header");
-        if (window.scrollY > 50) {
-            header.classList.add("sticky");
-        } else {
-            header.classList.remove("sticky");
-        }
-    });
-}
